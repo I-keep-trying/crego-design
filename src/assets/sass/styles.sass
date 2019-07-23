@@ -1,25 +1,59 @@
-@import "~bulma"
+@charset "utf-8"
+/*! bulma.io v0.7.5 | MIT License | github.com/jgthms/bulma */
+@import "~bulma/sass/utilities/_all.sass"
 
-$primary: #00d1b2
-$primary-invert: #ffffff
+$black:        hsl(0, 0%, 4%) !default
+$black-bis:    hsl(0, 0%, 7%) !default
+$black-ter:    hsl(0, 0%, 14%) !default
 
-nav
-  border-bottom: lightgray solid 0.1vmin
+$grey-darker:  hsl(0, 0%, 21%) !default
+$grey-dark:    hsl(0, 0%, 29%) !default
+$grey:         hsl(0, 0%, 48%) !default
+$grey-light:   hsl(0, 0%, 71%) !default
+$grey-lighter: hsl(0, 0%, 86%) !default
 
-.content .taglist
-  list-style: none
-  margin-bottom: 0
-  margin-left: 0
-  margin-right: 1.5rem
-  margin-top: 1.5rem
-  display: flex
-  flex-wrap: wrap
-  justify-content: left
-  align-items: center
-  li
-    padding: 0 2rem 1rem 0
-    margin-bottom: 1.5rem
-    margin-top: 0
+//$white-ter:    hsl(0, 0%, 96%) !default
+//$white-bis:    hsl(0, 0%, 98%) !default
+$white:        hsl(0, 0%, 100%) !default
 
-.margin-top-0
-  margin-top: 0 !important
+$orange:       hsl(14,  100%, 53%) !default
+$yellow:       hsl(48,  100%, 67%) !default
+$green:        hsl(141, 71%,  48%) !default
+$turquoise:    hsl(171, 100%, 41%) !default
+$cyan:         hsl(204, 86%,  53%) !default
+$blue:         hsl(217, 71%,  53%) !default
+$purple:       hsl(271, 100%, 71%) !default
+$red:          hsl(348, 100%, 61%) !default
+
+$body-background-color: $white !default
+$body-size: 16px !default
+$body-min-width: 300px !default
+$body-rendering: optimizeLegibility !default
+$body-family: $family-primary !default
+$body-overflow-x: hidden !default
+$body-overflow-y: scroll !default
+
+$body-color: $text !default
+$body-font-size: 1em !default
+$body-weight: $weight-normal !default
+$body-line-height: 1.5 !default
+
+$code-family: $family-code !default
+$code-padding: 0.25em 0.5em 0.25em !default
+$code-weight: normal !default
+$code-size: 0.875em !default
+
+$small-font-size: 0.875em !default
+
+$hr-background-color: $background !default
+$hr-height: 2px !default
+$hr-margin: 1.5rem 0 !default
+
+$strong-color: $text-strong !default
+$strong-weight: $weight-bold !default
+
+$pre-font-size: 0.875em !default
+$pre-padding: 1.25rem 1.5rem !default
+$pre-code-font-size: 1em !default
+
+@import "~bulma/bulma"
