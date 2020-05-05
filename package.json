@@ -11,7 +11,9 @@
     "serve": "gatsby serve",
     "lint": "eslint --ext js,jsx --ignore-path .gitignore .",
     "lint:fix": "eslint --ext js,jsx --ignore-path .gitignore . --fix",
-    "clean": "rm -rf public/ .cache/"
+    "clean": "rm -rf public/ .cache/",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^2.2.1",
@@ -44,7 +46,8 @@
     "react-dom": "^16.7.0",
     "react-helmet": "^5.2.0",
     "react-share": "^2.4.0",
-    "uglifyjs-webpack-plugin": "^2.1.1"
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "snyk": "^1.317.0"
   },
   "remarkConfig": {
     "plugins": [
@@ -65,5 +68,6 @@
     "remark-cli": "^6.0.1",
     "remark-preset-lint-recommended": "^3.0.2"
   },
-  "main": "config.js"
+  "main": "config.js",
+  "snyk": true
 }
